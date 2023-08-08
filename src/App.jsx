@@ -16,6 +16,10 @@ const App = () => {
     setValue(value.slice(0, -1));
   };
 
+  const equal = (e) => {
+    setValue(eval(value));
+  };
+
   return (
     <div className="container">
       <div className="screen">
@@ -45,8 +49,8 @@ const App = () => {
         <button onClick={handleClick} value="9">
           9
         </button>
-        <button onClick={handleClick} value="x">
-          x
+        <button onClick={handleClick} value="*">
+          *
         </button>
 
         <button onClick={handleClick} value="4">
@@ -81,7 +85,7 @@ const App = () => {
         <button onClick={handleClick} value=".">
           .
         </button>
-        <button onClick={handleClick} value="=">
+        <button onClick={equal} value="=">
           =
         </button>
       </div>
