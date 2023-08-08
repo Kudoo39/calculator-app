@@ -16,9 +16,14 @@ const App = () => {
     setValue(value.slice(0, -1));
   };
 
-  const equal = (e) => {
-    setValue(eval(value));
-  };
+  const equal = () => {
+    try {
+      const result = eval(value);
+      setValue(result);
+    } catch (error) {
+      setValue('Error: Invalid expression');
+    }
+  };  
 
   return (
     <div className="container">
@@ -27,14 +32,11 @@ const App = () => {
       </div>
 
       <div className="keyboard">
-        <button onClick={clear} value="AC">
+        <button className="big" onClick={clear} value="AC">
           AC
         </button>
         <button onClick={del} value="DEL">
           DEL
-        </button>
-        <button onClick={handleClick} value="%">
-          %
         </button>
         <button onClick={handleClick} value="/">
           /
