@@ -1,11 +1,37 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
- font-size: 30px;
+  font-size: 25px;
+  background-color: aqua;
+  padding: 15px;
+  padding-top: 20px;
+  width: 300px;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.screen input {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  text-align: right;
+}
+
+input[type="text"] {
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 0.5px cyan;
 }
 
 .keyboard {
