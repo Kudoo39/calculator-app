@@ -1,10 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+ font-size: 30px;
+}
+
 .keyboard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 .keyboard button {
   border: 1px solid #000;
+  padding: 10px 5px 10px;
 }
 
 .big {
