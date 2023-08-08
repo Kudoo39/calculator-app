@@ -32,13 +32,13 @@ const App = () => {
       </div>
 
       <div className="keyboard">
-        <button className="big" onClick={clear} value="AC">
+        <button className="big highlight" onClick={clear} value="AC">
           AC
         </button>
-        <button onClick={del} value="DEL">
+        <button className="highlight" onClick={del} value="DEL">
           DEL
         </button>
-        <button onClick={handleClick} value="/">
+        <button className="highlight" onClick={handleClick} value="/">
           /
         </button>
 
@@ -51,7 +51,7 @@ const App = () => {
         <button onClick={handleClick} value="9">
           9
         </button>
-        <button onClick={handleClick} value="*">
+        <button className="highlight" onClick={handleClick} value="*">
           *
         </button>
 
@@ -64,7 +64,7 @@ const App = () => {
         <button onClick={handleClick} value="6">
           6
         </button>
-        <button onClick={handleClick} value="-">
+        <button className="highlight" onClick={handleClick} value="-">
           -
         </button>
 
@@ -77,7 +77,7 @@ const App = () => {
         <button onClick={handleClick} value="3">
           3
         </button>
-        <button onClick={handleClick} value="+">
+        <button className="highlight" onClick={handleClick} value="+">
           +
         </button>
 
@@ -87,7 +87,7 @@ const App = () => {
         <button onClick={handleClick} value=".">
           .
         </button>
-        <button onClick={equal} value="=">
+        <button className="super-highlight" onClick={equal} value="=">
           =
         </button>
       </div>
