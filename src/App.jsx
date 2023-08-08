@@ -8,6 +8,14 @@ const App = () => {
     setValue(value + e.target.value);
   };
 
+  const clear = () => {
+    setValue("");
+  };
+
+  const del = () => {
+    setValue(value.slice(0, -1));
+  };
+
   return (
     <div className="container">
       <div className="screen">
@@ -15,10 +23,10 @@ const App = () => {
       </div>
 
       <div className="keyboard">
-        <button onClick={handleClick} value="AC">
+        <button onClick={clear} value="AC">
           AC
         </button>
-        <button onClick={handleClick} value="DEL">
+        <button onClick={del} value="DEL">
           DEL
         </button>
         <button onClick={handleClick} value="%">
